@@ -48,8 +48,8 @@ export default {
         return;
       }
 
-      this.$emit('add:employee', this.employee)
-this.$refs.first.focus()
+      this.$emit("add:employee", this.employee);
+      this.$refs.first.focus();
       this.employee = {
         name: "",
         email: ""
@@ -81,13 +81,13 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 0 auto;
   margin-bottom: 2rem;
   border: 1px;
   border-radius: 2px;
   padding: 0.75rem;
   outline: none;
   background: rgb(230, 223, 223);
-  margin-bottom: 0.5rem;
   font-size: 1rem;
   width: 50%;
   max-width: 50%;
@@ -98,8 +98,12 @@ label,
 input {
   font-weight: 600;
   max-width: 100%;
-  display: block;
-  margin: 1rem 0 0.5rem;
+  border-radius: 0 0.2rem;
+}
+
+label {
+  padding: 5px;
+  margin: 0.1rem;
 }
 
 [class*="-message"] {
