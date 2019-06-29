@@ -79,8 +79,9 @@ export default {
 <style scoped>
 form {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
+  flex-basis: 28%;
   margin: 0 auto;
   margin-bottom: 2rem;
   border: 1px;
@@ -94,10 +95,12 @@ form {
   line-height: 1;
 }
 
+form button {
+  margin-top: 1rem;
+}
 label,
 input {
   font-weight: 600;
-  max-width: 100%;
   border-radius: 0 0.2rem;
 }
 
